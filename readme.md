@@ -37,6 +37,7 @@ conda create -y -n ${env_name} python=3.9  # set Python version here
 
 After install perform an [automated check](pytorch3d/environment_check.sh) if all crucial libraries are imported correctly.
 
-**Note**:
-This script assumes that your CUDA versions are installed into `/usr/local/`, if that is not the case, you have to adjust this [here](utils/activate.sh#L8).
-The final CUDA path that is linked is then `/user/local/{custom_cuda_version}`
+**Note**
+- The default CUDA installation path is `/usr/local/`, you can change it [here](utils/activate.sh#L8) (Line 8). Tthe final CUDA path that is linked is then `/user/local/{custom_cuda_version}`.
+- The default conda path is `~/anaconda3/envs`, you can change it [here](utils/copy_activation_files.sh#L3) (Line 3).
+

@@ -13,5 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Shellcheck
+      - name: Shellcheck utils
         run: shellcheck utils/*.sh
+      - name: Shellcheck env
+        run: shellcheck pytorch3d/*.sh
